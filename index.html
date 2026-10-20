@@ -1,301 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lefa Molokomme | Portfolio</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
-
-body{
-    background:#f4f6f9;
-    color:#1e293b;
-    line-height:1.6;
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 80px;
-    background:white;
-    position:sticky;
-    top:0;
-}
-
-nav h2{
-    font-weight:600;
-}
-
-nav ul{
-    display:flex;
-    gap:30px;
-    list-style:none;
-}
-
-nav ul li{
-    cursor:pointer;
-    color:#475569;
-}
-
-nav ul li:hover{
-    color:#0f172a;
-}
-
-section{
-    padding:80px 80px;
-}
-
-.center{
-    text-align:center;
-    max-width:900px;
-    margin:auto;
-}
-
-h1{
-    font-size:60px;
-    margin:15px 0;
-}
-
-h2{
-    font-size:40px;
-    margin-bottom:40px;
-    text-align:center;
-}
-
-h3{
-    margin-bottom:10px;
-}
-
-.hero{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:80px;
-    padding:100px 80px;
-}
-
-.avatar{
-    width:280px;
-    height:280px;
-    border-radius:50%;
-    background:linear-gradient(135deg,#1e293b,#0f172a);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:70px;
-    color:white;
-}
-
-.btn{
-    padding:14px 30px;
-    background:#0f172a;
-    color:white;
-    border:none;
-    border-radius:30px;
-    cursor:pointer;
-    text-decoration:none;
-    display:inline-block;
-    margin-top:20px;
-}
-
-.btn:hover{
-    background:#1e293b;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.05);
-}
-
-.tag{
-    display:inline-block;
-    background:#e2e8f0;
-    padding:5px 10px;
-    border-radius:20px;
-    font-size:12px;
-    margin:5px 5px 0 0;
-}
-
-.project-img{
-    height:160px;
-    background:linear-gradient(135deg,#1e293b,#0f172a);
-    border-radius:12px 12px 0 0;
-}
-
-.project-card{
-    overflow:hidden;
-    background:white;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.05);
-}
-
-.project-content{
-    padding:20px;
-}
-
-.education-card{
-    max-width:800px;
-    margin:auto;
-}
-
-@media(max-width:900px){
-    .hero{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    section{
-        padding:60px 30px;
-    }
-
-    nav{
-        padding:20px 30px;
-    }
-
-    h1{
-        font-size:40px;
-    }
-}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#e9e8e4">
+<meta name="description" content="Lefa Molokomme — software development portfolio featuring projects, technical skills, and academic background.">
+<title>Lefa Molokomme — Software Developer Portfolio</title>
+<link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
 </head>
-
-<body>
-
-<nav>
-    <h2>Lefa Molokomme</h2>
-    <ul>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Education</li>
-        <li>Contact</li>
-    </ul>
+<body><div class="shell">
+<nav class="nav" aria-label="Main navigation">
+<a class="brand" href="#top">LEFA MOLOKOMME<sup>®</sup></a>
+<ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#work">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="nav-cta" href="#contact">Get in touch ↗</a>
 </nav>
-
-<!-- HERO -->
+<main id="top">
 <section class="hero">
-    <div class="avatar">LM</div>
-    <div>
-        <small style="color:#3b82f6;">WELCOME TO MY PORTFOLIO</small>
-        <h1>Lefa Molokomme</h1>
-        <p>Final-Year IT Student • Aspiring Software Developer</p>
-        <a href="Lefa-Molokomme-FlowCV-Resume-20260223.pdf" download class="btn">Download CV</a>
-    </div>
+<div class="meta"><span>PORTFOLIO / VOL. 01</span><span>SOFTWARE DEVELOPMENT · 2026</span></div>
+<div class="hero-main"><p class="eyebrow">Final-year IT student · Aspiring software developer</p><h1><em>Thoughtful</em> code.<br><span class="outline">Useful</span> experiences.</h1><p class="intro">I’m <strong>Lefa Molokomme</strong> — an aspiring software developer interested in building scalable, user-friendly applications through clean code, considered design, and continuous learning.</p><a class="btn-cv" href="Lefa-Molokomme-FlowCV-Resume-20260223.pdf" download>Download my CV <span>↓</span></a></div>
+<div class="hero-bottom"><a class="scroll-link" href="#work"><span>↓</span> SCROLL TO EXPLORE</a><p class="micro">CODE WITH PURPOSE.<br>DESIGN WITH INTENTION.</p><p class="availability"><span class="dot"></span>Open to opportunities</p></div>
+<div class="orbit a"></div><div class="orbit b"></div>
 </section>
-
-<!-- ABOUT -->
-<section class="center">
-    <h2>Solutions</h2>
-    <p>
-        I'm a passionate final-year Information Technology student with a strong
-        foundation in software development and a keen interest in building scalable,
-        user-friendly applications.
-    </p>
-    <br>
-    <p>
-        I’ve developed proficiency in both frontend and backend technologies,
-        particularly React, ASP.NET, and cloud services. I believe in writing
-        clean, maintainable code and continuously learning new technologies.
-    </p>
+<section class="section work" id="work">
+<div class="section-head"><div><p class="eyebrow">01 / Selected work</p><h2 class="section-title">Learning by <em>building.</em></h2></div><p class="section-note">Projects that bring together<br>problem-solving and practical skills.</p></div>
+<div class="gallery-label"><span>FEATURED PROJECTS (03)</span><span>DRAG OR SCROLL ↔</span></div>
+<div class="project-track" id="projectTrack" tabindex="0" aria-label="Scrollable project gallery">
+<article class="project"><div class="project-art art-retail"><span class="art-label">01 / DATA SYSTEMS</span><div class="retail-shape"></div></div><div class="project-info"><div><p class="project-type">DATABASE · FULL-STACK</p><h3>Retail Database Infrastructure</h3></div><a class="arrow" href="https://github.com/MolokommeLefa" target="_blank" rel="noopener" aria-label="View GitHub profile">↗</a></div><p class="project-desc">A retail-focused database application designed to organise store data and support core business workflows.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div></article>
+<article class="project"><div class="project-art art-api"><span class="art-label">02 / BACKEND</span><div class="api-grid"></div><div class="api-line"></div><div class="api-mark">API<span style="font-size:.35em;vertical-align:top">/</span></div></div><div class="project-info"><div><p class="project-type">REST API · AUTHENTICATION</p><h3>Claim Management API</h3></div><a class="arrow" href="https://github.com/MolokommeLefa" target="_blank" rel="noopener" aria-label="View GitHub profile">↗</a></div><p class="project-desc">A RESTful API concept using role-based access and JWT authentication to protect application workflows.</p><div class="tags"><span class="tag">ASP.NET CORE</span><span class="tag">SQL SERVER</span><span class="tag">JWT</span></div></article>
+<article class="project"><div class="project-art art-weather"><span class="art-label">03 / DATA VISUALISATION</span><div class="sun"></div><div class="weather-cloud"></div></div><div class="project-info"><div><p class="project-type">FRONTEND · EXTERNAL API</p><h3>Weather Dashboard</h3></div><a class="arrow" href="https://github.com/MolokommeLefa" target="_blank" rel="noopener" aria-label="View GitHub profile">↗</a></div><p class="project-desc">An interactive dashboard concept for presenting current weather information through an external data API.</p><div class="tags"><span class="tag">JAVASCRIPT</span><span class="tag">API INTEGRATION</span><span class="tag">UI</span></div></article>
+</div><p class="section-note" style="margin-top:14px">Project links currently point to my GitHub profile. Replace them with individual repository URLs when available.</p>
 </section>
-
-<!-- SKILLS -->
-<section>
-    <h2>Technologies & Expertise</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Languages</h3>
-            <span class="tag">Java</span>
-            <span class="tag">C#</span>
-            <span class="tag">SQL</span>
-        </div>
-
-        <div class="card">
-            <h3>Frameworks</h3>
-            <span class="tag">React</span>
-            <span class="tag">ASP.NET Core</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Spring Boot</span>
-        </div>
-
-        <div class="card">
-            <h3>Tools</h3>
-            <span class="tag">Git</span>
-            <span class="tag">Azure</span>
-            <span class="tag">VS Code</span>
-        </div>
-
-        <div class="card">
-            <h3>Soft Skills</h3>
-            <span class="tag">Problem Solving</span>
-            <span class="tag">Team Collaboration</span>
-            <span class="tag">Agile/Scrum</span>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section>
-    <h2>Featured Projects</h2>
-    <div class="grid">
-        <div class="project-card">
-            <div class="project-img"></div>
-            <div class="project-content">
-                <h3>Retail Database Infrastructure</h3>
-                <p>Fully built Database application for retail store.</p>
-                <span class="tag">React</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">MongoDB</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img"></div>
-            <div class="project-content">
-                <h3>Claim Management API system</h3>
-                <p>RESTful API with role-based access and JWT authentication.</p>
-                <span class="tag">ASP.NET Core</span>
-                <span class="tag">SQL Server</span>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img"></div>
-            <div class="project-content">
-                <h3>Weather Dashboard</h3>
-                <p>Interactive dashboard displaying real-time weather data.</p>
-                <span class="tag">JavaScript</span>
-                <span class="tag">API</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- EDUCATION -->
-<section>
-    <h2>Academic Background</h2>
-    <div class="card education-card">
-        <h3>Bachelor of Computer and information sciences in application development</h3>
-        <p><strong>Emeris Ruimsig</strong> | 2024 - 2026 (Expected)</p>
-        <br>
-        <p>Specializing in Software Development and Cloud Computing.</p>
-    </div>
-</section>
-
-</body>
-</html>
+<section class="section" id="about"><div class="section-head"><div><p class="eyebrow">02 / About & expertise</p><h2 class="section-title">Curious by nature.<br><em>Developer in progress.</em></h2></div><p class="section-note">Grounded in fundamentals.<br>Motivated by continuous improvement.</p></div>
+<div class="about-grid"><p class="about-copy">I’m an Information Technology student with a foundation in software development and a strong interest in <em>scalable systems, cloud services,</em> and clean user experiences. I value maintainable code, collaborative problem-solving, and learning through real projects.</p>
+<div class="skill-list" id="skills">
+<div class="skill"><span class="skill-num">01</span><div><h3>Languages</h3><p>Java · C# · SQL · JavaScript</p></div></div>
+<div class="skill"><span class="skill-num">02</span><div><h3>Frameworks & platforms</h3><p>React · ASP.NET Core · Node.js · Spring Boot</p></div></div>
+<div class="skill"><span class="skill-num">03</span><div><h3>Tools & cloud</h3><p>Git · GitHub · Microsoft Azure · Visual Studio Code</p></div></div>
+<div class="skill"><span class="skill-num">04</span><div><h3>Ways of working</h3><p>Problem-solving · Team collaboration · Agile/Scrum</p></div></div>
+</div></div></section>
+<section class="section education" id="education"><p class="eyebrow">03 / Academic background</p><div class="education-card"><div><h3>Bachelor of Computer and Information Sciences in Application Development</h3><p><strong>Emeris Ruimsig</strong><br>Specialising in software development and cloud computing.</p></div><span class="edu-date">2024 — 2026 (EXPECTED)</span></div></section>
+<section class="section contact" id="contact"><p class="eyebrow">04 / Contact</p><h2>Ready to build<br>something <em>useful?</em></h2><div class="contact-bottom"><p>I’m interested in graduate opportunities, internships, and teams that care about building reliable software and thoughtful digital experiences.</p><a class="email" href="mailto:lefa.molokomme@gmail.com">Let’s connect <span>↗</span></a></div></section>
+</main>
+<footer class="footer"><a class="brand" href="#top">LEFA MOLOKOMME<sup>®</sup></a><span class="footer-note">BUILT WITH CURIOSITY. IMPROVED THROUGH PRACTICE.</span><span class="footer-note">© <span id="year">2026</span></span></footer>
+</div></body></html>
